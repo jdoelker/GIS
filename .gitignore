@@ -1,0 +1,75 @@
+### --- ArcGIS & ArcPy ---
+# ArcGIS lock files (created when data is open/being edited)
+*.lock
+
+# ArcGIS Pro project backups and indexing files
+.aprx.bak
+*.gdbhtml/
+*.put/
+
+# ArcMap/ArcCatalog temporary files
+*.History/
+*.mxd.bak
+
+# Automatically generated logs and schemas
+*log.xml
+*_manifest.xml
+
+
+### --- QGIS & PyQGIS ---
+# QGIS project backups and local state files
+*.qgs~
+*.qgz.bak
+*.qgis~
+
+# Local user UI configurations (window positions, panel states)
+*.qgs.local
+*.qgz.local
+
+# QGIS browser cache and authentication databases
+.qgis6/
+qgis-auth.db
+
+
+### --- GDAL / OGR & Spatial Data Outputs ---
+# GDAL virtual datasets and history files
+*.vrt.bak
+
+# Shapefile auxiliary files (untrack unless explicitly needed)
+# Note: Keep .shp, .shx, .dbf, .prj for complete shapefiles
+*.shp.xml
+*.cpg
+
+# GeoTIFF overviews and statistics ( pyramids )
+*.tif.ovr
+*.tiff.ovr
+*.aux.xml
+*.tfw
+*.wld
+
+
+### --- Python & Geoprocessing Notebooks ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints and scratchpads
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Local environment files (where spatial libraries are installed)
+.venv/
+venv/
+env/
+ENV/
+
+
+### --- Generic Large Data & Temp Files (Optional but Recommended) ---
+# Prevent accidentally committing massive spatial datasets
+# Uncomment these if you want to force keeping data out of Git
+# *.gdb/
+# *.shp
+# *.tif
+# *.tiff
+# *.geojson
