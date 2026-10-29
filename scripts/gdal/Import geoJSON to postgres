@@ -1,0 +1,10 @@
+#Import geoJSON to postgres
+
+ogr2ogr -f "PostgreSQL" PG:"dbname=my_database host=localhost user=postgres password=mypassword" source_data.json -nln destination_table
+
+
+### Useful Flags and Options
+* **`-nln table_name`**: Sets a custom name for the destination table in PostGIS.
+* **`-append`**: Adds the new records to an already existing table instead of overwriting or failing.
+* **`-overwrite`**: Drops the existing table and recreates it with the new data.
+* **`-progress`**: Displays a progress bar during the import of large datasets.
